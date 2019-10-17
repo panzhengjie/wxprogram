@@ -1,0 +1,39 @@
+<!--pages/technician/technician.wxml-->
+<view>
+  <view class='hear'>
+    <view class='ar_picker_wrap'>
+      <picker range="{{rangeList}}" value="{{casIndex}}" bindchange="bindCasPickerChange">
+          <view>
+            <text>{{rangeList[casIndex]}}</text>
+          </view>
+      </picker>
+    </view>
+  </view>
+  <view class='hear'>
+    <view class='ar_picker_wrap'>
+      <picker range="{{rangeLise2}}" value="{{casIndex2}}" bindchange="bindCasPickerChange2">
+          <view>
+            <text>{{rangeLise2[casIndex2]}}</text>
+          </view>
+      </picker>
+    </view>
+  </view>
+  <view class='itemShow'>
+    <block wx:for-items='{{list}}'  wx:key='index'>
+      <view class='itemList'  bindtap="navigateDetail" data-aid="{{index}}">
+        <view class='listImg'>
+          <image src='{{item.avatar}}'></image>
+        </view>
+        <view class='listTitle'>
+          <text class='subject'>{{item.nickname}}</text>
+          <text class='price'>价格:{{item.price}}</text>
+          <text class='message'>{{item.message}}</text>
+        </view>
+        <view class='preText'>
+          <text>{{item.distance}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+</view>

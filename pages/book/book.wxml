@@ -1,0 +1,35 @@
+<!--pages/book/book.wxml-->
+<view class='container'>
+  <view class="ar_coverpath">
+        <image src="../../images/banner_02.png" mode="aspectFill"></image>
+  </view>
+  <view class='ar_picker'>
+    <view class='ar_picker_wrap'>
+      <picker range="{{rangeLise2}}" value="{{casIndex2}}" bindchange="bindCasPickerChange2">
+        <view>
+          <text>{{rangeLise2[casIndex2]}}</text>
+        </view>
+      </picker>
+    </view>  
+  </view>
+  <view class="ar_cont">
+    <text class='ar_cont_h1'>服务时间</text>
+    <view class='ar_date_time'>
+      <view class='ar_date'>
+        <image src='../../images/date.png'></image>
+        <picker mode="date" start="2019-10-16" end="2020-01-01" value="{{date}}" bindchange="bindDateChange">{{date}}</picker>
+      </view>
+      <view class='ar_date'>
+        <image src='../../images/time.png'></image>
+        <picker mode="time" start="12:00" end="24:00" value="{{time}}" bindchange="bindTimeChange">{{time}}</picker>
+      </view>
+      
+    </view>
+    <text class="ar_cont_h1">留言信息</text>
+    <input type="text" placeholder="输入信息" class="input_msg" placeholder-style="font-family:'微软雅黑'"/>
+    <button class="ar_book" bindtap="bindToastTap">确定预定</button>
+    <toast hidden="{{bookToastHidden}}"  bindchange="hideToast">
+      预定成功
+    </toast>
+  </view>
+</view>

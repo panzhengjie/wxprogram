@@ -1,0 +1,68 @@
+/* pages/technician/technician.wxss */
+.hear {
+  width:100%;
+  font-size:30rpx;
+  color:#000;
+  background:#efeff4;
+  margin:0;
+  padding:10rpx 0rpx;
+}
+.ar_picker_wrap {
+  width:670rpx;
+  background:#fff;
+  background-size:25rpx 14rpx;
+  background-position:650rpx;
+  border-radius:20rpx;
+  padding:10rpx 30rpx;
+  margin:10rpx auto;
+  border:1px solid #ddd;
+}
+.itemShow{
+  width:100%;
+}
+.itemList{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:30rpx;
+  border-bottom:2rpx solid #ddd;
+  position:relative;
+}
+.listImg{
+  width:170rpx;
+  height:158rpx;
+}
+.listImg image{
+  width: 100%;
+  height: 100%;
+}
+.listTitle{
+  width:400rpx;
+  font-size:26rpx;
+  color:#a9a9a9;
+}
+.listTitle text{
+  display: block;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.subject{
+  font-size:30rpx;
+  line-height:60rpx;
+  color:#000;
+  margin-bottom:10rpx;
+}
+.price{
+  font-size:32rpx;
+  color:#d24a58;
+}
+.preText{
+  width:80rpx;
+  height:80rpx;
+  font-size:26rpx;
+  line-height:80rpx;
+  color:red;
+  text-align:center;
+  margin-top:35rpx;
+}
